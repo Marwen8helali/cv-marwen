@@ -1,0 +1,12 @@
+.PopUp{
+    background-color: transparent;
+    border: none;
+    color: rgb(42, 104, 219);
+    text-decoration: underline;
+    padding-left: inherit;
+}
+
+.PopUp:link {color:rgb(6, 6, 248);}              /* Lien non visité */
+.PopUp:visited {color:#1b03ee;}          /* Lien visité */
+.PopUp:hover {color:#01023b;}            /* Lien survolé*/
+.PopUp:active {color:#261a6d;}           /* Lien sélectionné */

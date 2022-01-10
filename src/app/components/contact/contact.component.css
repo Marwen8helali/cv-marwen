@@ -1,0 +1,43 @@
+.container{
+    text-align: -webkit-center;
+    background-color:  rgb(175, 190, 236);
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 3px;
+}
+.card{
+    
+    margin-bottom: 1rem!important;
+    /*box-shadow: -18px 16px 18px -15px rgb(0 0 73);*/
+    box-shadow:-18px 16px 18px -15px rgb(170 170 255);
+}
+#supDiv{
+    max-width: 730px;
+    padding: 30px;
+    border-radius: inherit;
+    text-align: -webkit-auto;
+}
+.contenu{
+    margin-top: 15px;
+  /*margin-left: 22%;*/
+}
+.titre{
+    margin: 0px 0px 40px 0px;
+    width: 730px;
+    text-align: left;
+}
+
+.btn{
+    border: aliceblue;
+    border-radius: 35px;
+    transform: scale(1);
+  
+}
+
+.fab{
+    font-size: x-large;
+}
+
+.form-control{
+    margin-bottom: 15px;
+}
