@@ -10,13 +10,15 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 const routes: Routes = [
+  { path: '', component: ProposComponent },
   { path: 'propos', component: ProposComponent },
+  
   { path: 'cv', component: CvComponent },
   { path: 'projets', component: ProjetsComponent },
   { path: 'contact', component: ContactComponent },
-
+  
   { path: '**' , component: NotFoundComponent},
-  { path: '', redirectTo: 'home', pathMatch: 'full' }
+  { path: '', redirectTo: 'propos', pathMatch: 'full' }
 ];
 
 @NgModule({

@@ -117,3 +117,13 @@ app-modal{
     padding-left: 15px !important;
     padding-right: 15px !important;
 } 
+@media only screen and (max-width:700px){
+
+    
+    #ch1 {
+        content: attr(height);
+        height: 1200px;
+        background-color: rgb(175, 190, 236);
+        width: 50%;
+    }
+}
