@@ -13,11 +13,12 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 const routes: Routes = [
   { path: '', component: ProposComponent },
   { path: 'propos', component: ProposComponent },
+  { path: 'thanks', component:  ThanksComponent},
   
   { path: 'cv', component: CvComponent },
   { path: 'projets', component: ProjetsComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'thanks', component:  ThanksComponent},
+  
   
   { path: '**' , component: NotFoundComponent},
   { path: '', redirectTo: 'propos', pathMatch: 'full' }
