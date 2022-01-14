@@ -1,5 +1,23 @@
 <div class="container" >
- 
+ <!--popUp-->
+ <ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p>Merci de nous contacter :)</p>
+      
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Save</button>
+    </div>
+  </ng-template>
+  
+ <!--<button class="PopUp" (click)="open(content)">Lire la suite</button>-->
+ <!--popUp-->
     
     <div class="contenu">
         <div class="card " style="max-width: 735px;background-color: transparent;border: none;box-shadow: none;">
@@ -19,7 +37,8 @@
         <div class="card mb-3" style="max-width: 730px;padding: 30px;border-radius: inherit;text-align: left;">
             <div class="row g-0">
                 <form target="_blank" action="https://formsubmit.co/marwen.helali@gmail.com" method="POST">
-                  <div class="form-group">
+                    <input type="hidden" name="_next" value="https://http://cv-marwen.herokuapp.com/contact">
+                    <div class="form-group">
                     <div class="form-row">
                       <div class="col">
                         <input type="text" name="name" class="form-control" placeholder="Full Name" required>
@@ -32,7 +51,7 @@
                   <div class="form-group">
                     <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
                   </div>
-                  <button style="    color: aliceblue;font-size: larger;" type="submit" class="btn btn-md btn-info btn-block">Envoyer</button>
+                  <button style="    color: aliceblue;font-size: larger;" type="submit" class="btn btn-md btn-info btn-block" (click)="open(content)">Envoyer</button>
                 </form>
 
 

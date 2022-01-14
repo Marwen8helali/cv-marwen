@@ -16,6 +16,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ModalComponent } from './components/modal/modal.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { ModalComponent } from './components/modal/modal.component';
     ContactComponent,
     NotFoundComponent,
     FooterComponent,
-    ModalComponent
+    ModalComponent,
+    
 
   ],
   imports: [
